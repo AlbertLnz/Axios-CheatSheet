@@ -24,3 +24,16 @@ export async function handlingError_Catch(){
     }) 
 
 }
+
+export async function handlingError_Try_Catch(){
+
+    try {
+        const resPosts = await axios.get("https://jsonplaceholder.typicode.com/postsXXXXX")
+        console.log(resPosts)
+    } catch (error) {
+        console.error(error)
+        alert(error.response.data.error) // == undefined <-- Because this backend returns an empty object: {}
+        if(error.response.status === 404) console.log('¡¡ERROR 404: NOT FOUND!!')
+    }
+    
+}

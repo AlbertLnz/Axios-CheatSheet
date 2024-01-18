@@ -8,3 +8,15 @@ export async function headerInsert_GET(){
 
     console.log(res)
 }
+
+export async function headerInsert_POST(){
+
+    const data = {user: "Pepe123"}
+
+    const res = await axios.post("https://jsonplaceholder.typicode.com/users", data, {
+        headers: {
+            "Peeeeeeeeeepe": "12345678"
+        }
+    })
+    console.log(res)
+}

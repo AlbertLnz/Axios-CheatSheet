@@ -14,3 +14,15 @@ export async function asyncAwaitSynchronous(){ // <--- MALPRACTICE HABIT
 
     console.log(resUsers, postUsers)
 }
+
+export async function asyncAwaitAsynchronous(){ // <--- CORRECT HABIT 
+    const usersURL = 'https://jsonplaceholder.typicode.com/users'
+    const postsURL = 'https://jsonplaceholder.typicode.com/posts'
+
+    const res = await Promise.all([axios.get(usersURL), axios.get(postsURL)])
+    console.log(res)
+    console.log(res[0]) // === usersURL
+    console.log(res[1]) // === postsURL
+    console.log(res[0].data) // === usersURL.data
+    console.log(res[1].data) // === postsURL.data
+}

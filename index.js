@@ -1,3 +1,4 @@
-import { getUsers } from './1. Peticiones/1-index_GET.js'
+import { getUsers, getUsers2 } from './1. Peticiones/1-index_GET.js'
 
-getUsers()
+// getUsers()
+getUsers2()

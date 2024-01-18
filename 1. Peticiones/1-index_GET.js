@@ -6,4 +6,13 @@ export function getUsers(){
     .catch(err => console.log(err))
 }
 
-// Using 'export' to export the function with ECMA JS
+export function getUsers2(){
+    axios({
+        url: "https://jsonplaceholder.typicode.com/users",
+        method: "GET",
+    })
+    .then((res) => console.log(res))
+    .catch((err) => console.error(err))
+}
+
+// Using 'export' to export the functions with ECMA JS

@@ -2,6 +2,7 @@ import { asyncAwaitSimple, asyncAwaitSynchronous, asyncAwaitAsynchronous, asyncA
 import { interceptingConfiguration, interceptingConfiguration_ChangeURL, interceptingConfiguration_AddNewElement } from "./2. Advanced attributes/6-index2_INTERCEPTORS.js"
 import { headerInsert_GET, headerInsert_POST } from "./2. Advanced attributes/7-index2_HEADERS.js"
 import { requestTransformResponse } from "./2. Advanced attributes/8-index2_REQUEST_TRANSFORM.js"
+import { globalHeaderForAllRequests } from "./2. Advanced attributes/9-index2_GLOBALS.js"
 
 // asyncAwaitSimple()
 // asyncAwaitSynchronous()
@@ -15,4 +16,6 @@ import { requestTransformResponse } from "./2. Advanced attributes/8-index2_REQU
 // headerInsert_GET()
 // headerInsert_POST()
 
-requestTransformResponse()
+// requestTransformResponse()
+
+globalHeaderForAllRequests()

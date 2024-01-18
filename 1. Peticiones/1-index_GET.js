@@ -18,4 +18,14 @@ export function getUsers2(){
     .catch((err) => console.error(err))
 }
 
+export function getUsers3(){
+    axios.get("https://jsonplaceholder.typicode.com/users", { // .get is not necessary (default) but it's better to be descriptive!
+        params:{
+            _limit: 5
+        }
+    })
+    .then((res) => { console.log(res) })
+    .catch((err) => console.error(err))
+}
+
 // Using 'export' to export the functions with ECMA JS

@@ -3,15 +3,18 @@ import { createUser2, createUser3, createUser3_objectOutside } from './1. Petici
 import { updateUser_PUT, updateUser_PATCH } from './1. Peticiones/3-index_PUT_PATCH.js'
 import { deleteUser } from './1. Peticiones/4-index_DELETE.js'
 
-// getUsers()
-// getUsers2()
-// getUsers3()
 
-// createUser2()
-// createUser3()
-// createUser3_objectOutside()
+createUser2()
+createUser3()
+createUser3_objectOutside()
 
-// updateUser_PUT()
-// updateUser_PATCH()
+updateUser_PUT()
+updateUser_PATCH()
 
 deleteUser()
+
+getUsers()
+getUsers2()
+getUsers3()
+
+// It doesn't matter the order, because they are ASYNCHRONOUS functions!

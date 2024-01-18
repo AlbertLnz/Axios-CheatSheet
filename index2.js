@@ -1,5 +1,5 @@
 import { asyncAwaitSimple, asyncAwaitSynchronous, asyncAwaitAsynchronous, asyncAwaitAsynchronousPromises } from "./2. Advanced attributes/5-index2_ASYNC_AWAIT.js"
-import { interceptingConfiguration, interceptingConfiguration_ChangeURL } from "./2. Advanced attributes/6-index2_INTERCEPTORS.js"
+import { interceptingConfiguration, interceptingConfiguration_ChangeURL, interceptingConfiguration_AddNewElement } from "./2. Advanced attributes/6-index2_INTERCEPTORS.js"
 
 // asyncAwaitSimple()
 // asyncAwaitSynchronous()
@@ -7,4 +7,5 @@ import { interceptingConfiguration, interceptingConfiguration_ChangeURL } from "
 // asyncAwaitAsynchronousPromises()
 
 // interceptingConfiguration()
-interceptingConfiguration_ChangeURL()
+// interceptingConfiguration_ChangeURL()
+interceptingConfiguration_AddNewElement()

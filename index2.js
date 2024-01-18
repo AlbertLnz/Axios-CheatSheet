@@ -3,6 +3,7 @@ import { interceptingConfiguration, interceptingConfiguration_ChangeURL, interce
 import { headerInsert_GET, headerInsert_POST } from "./2. Advanced attributes/7-index2_HEADERS.js"
 import { requestTransformResponse } from "./2. Advanced attributes/8-index2_REQUEST_TRANSFORM.js"
 import { globalHeaderForAllRequests } from "./2. Advanced attributes/9-index2_GLOBALS.js"
+import { withoutHandlingTheError } from "./2. Advanced attributes/10-index2_ERROR_HANDLING.js"
 
 // asyncAwaitSimple()
 // asyncAwaitSynchronous()
@@ -18,4 +19,6 @@ import { globalHeaderForAllRequests } from "./2. Advanced attributes/9-index2_GL
 
 // requestTransformResponse()
 
-globalHeaderForAllRequests()
+// globalHeaderForAllRequests()
+
+withoutHandlingTheError()

@@ -1,4 +1,4 @@
-// · POST --> Example from: https://reqres.in
+// · POST --> Examples from: https://reqres.in
 
 export function createUser2(){
     axios({
@@ -8,6 +8,15 @@ export function createUser2(){
             "email": "eve.holt@reqres.in",
             "password": "pistol"
         }
+    })
+    .then(res => console.log(res))
+    .catch(err => console.error(err))
+}
+
+export function createUser3(){
+    axios.post("https://reqres.in/api/register", {
+        "email": "eve.holt@reqres.in",
+        "password": "pistol"
     })
     .then(res => console.log(res))
     .catch(err => console.error(err))

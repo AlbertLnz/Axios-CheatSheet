@@ -26,3 +26,12 @@ export async function asyncAwaitAsynchronous(){ // <--- CORRECT HABIT
     console.log(res[0].data) // === usersURL.data
     console.log(res[1].data) // === postsURL.data
 }
+
+export async function asyncAwaitAsynchronousPromises(){ // <--- USING PROMISES (CORRECT HABIT)
+    const usersURL = 'https://jsonplaceholder.typicode.com/users'
+    const postsURL = 'https://jsonplaceholder.typicode.com/posts'
+
+    Promise.all([axios.get(usersURL), axios.get(postsURL)])
+    .then(res => console.log(res))
+    .catch(err => console.error(err))
+}

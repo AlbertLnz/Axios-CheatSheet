@@ -10,6 +10,9 @@ export function getUsers2(){
     axios({
         url: "https://jsonplaceholder.typicode.com/users",
         method: "GET",
+        params:{
+            _limit: 3 // === https://jsonplaceholder.typicode.com/users?_limit=3 <--- return 3 users instead of 10
+        }
     })
     .then((res) => console.log(res))
     .catch((err) => console.error(err))

@@ -2,7 +2,7 @@
 
 export function getUsers(){
     axios.get('https://jsonplaceholder.typicode.com/users')
-    .then(res => console.log(res)) 
+    .then(res => console.log(res.data)) // accessing the data directly
     .catch(err => console.log(err))
 }
 

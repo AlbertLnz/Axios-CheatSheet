@@ -6,6 +6,7 @@ import { globalHeaderForAllRequests } from "./2. Advanced attributes/9-index2_GL
 import { withoutHandlingTheError, handlingError_Catch, handlingError_Try_Catch } from "./2. Advanced attributes/10-index2_ERROR_HANDLING.js"
 import { cancellation_AbortController } from "./2. Advanced attributes/11-index2_CANCELLATION.js"
 import { instance_BaseUrl } from "./2. Advanced attributes/12-index2_INSTANCES.js"
+import { timeOutResponse80 } from "./2. Advanced attributes/13-index2_TIMEOUT.js"
 
 // asyncAwaitSimple()
 // asyncAwaitSynchronous()
@@ -29,4 +30,6 @@ import { instance_BaseUrl } from "./2. Advanced attributes/12-index2_INSTANCES.j
 
 // cancellation_AbortController()
 
-instance_BaseUrl()
+// instance_BaseUrl()
+
+timeOutResponse80()
